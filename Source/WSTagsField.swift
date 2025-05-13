@@ -308,6 +308,8 @@ open class WSTagsField: UIScrollView {
     }
 
     deinit {
+        print("🧼 WSTagsField DEINIT called")
+
         if #available(iOS 13, *) {
             // Observers should be cleared when NSKeyValueObservation is deallocated.
             // Let's just keep the code for older iOS versions unmodified to make
